@@ -45,6 +45,7 @@ comments: true
 
 ### 3-1. 이미지 가운데 정렬
 ![이미지 가운데 정렬](http://placehold.it/200x200){: .center-image}
+![_config.yml]({{ site.baseurl }}/images/config.png)
 
 ## 4. 인용구
 
