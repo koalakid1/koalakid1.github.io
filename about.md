@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+동국대학교 수학과 재학 중인 태미니
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+rl, unity에 관심이 생겨서 공부하던 도중 정리가 필요할 것 같아서 블로그를 만들어봤다~~이말이지
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[koalakid154@gmail.com](mailto:koalakid154@gmail.com)

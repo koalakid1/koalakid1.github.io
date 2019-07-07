@@ -22,7 +22,7 @@ CCW의 return은 보통 **3가지 경우**이다.
 
 세 점$$(X_{1}, Y_{1}), (X_{2}, Y_{2}), (X_{3}, Y_{3}) $$이 주어졌을 때, 세 점을 이어서 만든 삼각형의 넓이를 abs(S)라고 하면 다음과 같은 공식이 성립한다.
 
-![_config.yml]({{site.baseurl}}/images/0707-1.gif)
+![_config.yml]({{site.baseurl}}/images/ccw/0707-1.gif)
 
 여기서 S의 부호에 따라서 다음과 같이 세 가지로 나타난다.
 
@@ -55,7 +55,7 @@ CCW의 return은 보통 **3가지 경우**이다.
     
 그렇다면 이를 이용해서 **어떻게** 선분교차판별을 할 수 있을까?
 
-![_config.yml]({{site.baseurl}}/images/ccw1.png)
+![_config.yml]({{site.baseurl}}/images/ccw/ccw1.png)
 
 다음과 같은 경우에 **선분 AB**를 기준으로 AB-C와 AB-D가 방향이 다른 것을 알 수 있다. 즉 그 의미는 CCW를 ABC, ABD에 각각 적용했을 때, **부호가 다르다**는 뜻이다.
 
@@ -63,7 +63,7 @@ CCW의 return은 보통 **3가지 경우**이다.
 
 반대로 평행하는 경우라면 CCW(A,B,C)와 CCW(A,B,D)의 곱이 양수이다.
 
-![_config.yml]({{site.baseurl}}/images/ccw2.png)
+![_config.yml]({{site.baseurl}}/images/ccw/ccw2.png)
 
 그런데 이 경우를 확인하면 선분 CD에 대해서 CCW(C,D,A)와 CCW(C,D,B)의 부호가 서로 다름에도 불구하고 교차하지 않는 모습을 볼 수 있다.
 
@@ -73,3 +73,5 @@ CCW의 return은 보통 **3가지 경우**이다.
 
 한마디로 CCW(A,B,D)CCW(A,B,C) < 0이고 
 CCW(C,D,A)CCW(C,D,B) < 0 이면 두 선분 AB,CD는 교차한다.
+
+관련 문제 - [백준 11758번 CCW](https://www.acmicpc.net/problem/11758)
