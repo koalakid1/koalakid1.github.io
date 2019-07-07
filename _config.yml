@@ -109,3 +109,5 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+disqus_shortname: koalakid154
