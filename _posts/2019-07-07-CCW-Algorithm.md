@@ -63,7 +63,7 @@ CCW의 return은 보통 **3가지 경우**이다.
 
 반대로 평행하는 경우라면 CCW(A,B,C)와 CCW(A,B,D)의 곱이 양수이다.
 
-![_config.yml]({{site.baseurl}}/images/ccw1.png)
+![_config.yml]({{site.baseurl}}/images/ccw2.png)
 
 그런데 이 경우를 확인하면 선분 CD에 대해서 CCW(C,D,A)와 CCW(C,D,B)의 부호가 서로 다름에도 불구하고 교차하지 않는 모습을 볼 수 있다.
 
