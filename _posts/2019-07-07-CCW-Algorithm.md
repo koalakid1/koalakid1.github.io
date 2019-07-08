@@ -34,23 +34,19 @@ CCW의 return은 보통 **3가지 경우**이다.
 
 #### C언어
 
-	int ccw(int x1, int y1, int x2, int y2, int x3, int y3) {
+	int CCW(int x1, int y1, int x2, int y2, int x3, int y3) {
     	int temp = x1*y2+x2*y3+x3*y1;
     	temp = temp - y1*x2-y2*x3-y3*x1;
-  	  if (temp > 0) {
-   	     return 1;
-   	 } else if (temp < 0) {
-  	 	 return -1;
-   	 } else {
-     	   return 0;
-  	  }
-	}
-
+        return temp
+    }
 
 #### 파이썬
 
-	추가 예정
-
+	def CCW(x1,y1,x2,y2,x3,y3):
+    	temp = 0;
+        temp += x1*y2+x2*y3+x3*y1;
+        temp -= y1*x2-y2*x3-y3*x1;
+        return temp
 
     
 그렇다면 이를 이용해서 **어떻게** 선분교차판별을 할 수 있을까?
