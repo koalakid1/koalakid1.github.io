@@ -27,6 +27,8 @@ RL을 적용할때 많은 사람들이 high dimensional sensory input을 직접 
 
 ![_config.yml]({{site.baseurl}}/images/dqn/1.PNG)
 
+참고로 t시점의 action에 대한 reward와 state는 t+1시점
+
 ###### value function과 q-value function의 차이
 
 value function
@@ -39,3 +41,15 @@ Q-value function
 
 q-value 중에서 가장 최적의 q-value 값을 갖는 q-value function을 의미
 $$Q^{*}(s,a)=\max_{\pi }Q^{\pi}(s,a)=Q^{\pi^{*}}(s,a)$$
+
+optimal q-value라는 것은 각각의 상태 s에 대해 행동 action을 정해서 최적의 보상 reward들의 합이다.
+
+그리하여 나오는 것이 bellman equation $$\mathbf{E}_{s'}[r+\gamma \max_{a'}Q^{*}(s',a')|s,a]$$
+
+기존의 q-learning은 table의 형태로 모든 state와 action을 표현했지만 이것은 확장성이 떨어져서 사용이 불가능하기 때문에 q-network를 사용해서 한다. 우리가 가지고 있는 q-network의 결과가 $$Q^{*}$$로 수렴하는 것이 목적이다. (w는 q-network의 parameter)
+$$Q(s,a,w)\approx Q^{*}(s,a)$$
+
+bellman equation에서 표현한 q-value를 y, $$Q(s,a,w)$$를 $$y_{predict}$$라고 하면 q-network는 MSE lose를 이용한다.
+$$ l = (r + \gamma\max_{a}Q^{*}(s',a',w))^2$$
+
+table방식의 RL에서는 이 방법이 무한히 반복하면 수렴한다는 사실이 있지만 Q-network에서는 아까 전의 이유로 수렴하지 않는다. 그래서 사용한 방법이 바로 experience replay라는 방법이다.
