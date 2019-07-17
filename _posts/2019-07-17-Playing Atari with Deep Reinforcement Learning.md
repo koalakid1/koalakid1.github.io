@@ -30,12 +30,12 @@ RL을 적용할때 많은 사람들이 high dimensional sensory input을 직접 
 ###### value function과 q-value function의 차이
 
 value function
-어떤 상태 &&s_t&&에서 나는 기대되는 보상이 얼마나 되는지?
+어떤 상태 $$s_t$$에서 나는 기대되는 보상이 얼마나 되는지?
 
 Q-value function
-어떤 상태 &&s_t&&에서 어떤 행동 &&a_t&&를 취했을 때, 얼마나 좋은 보상이 기대되는지?
+어떤 상태 $$s_t$$에서 어떤 행동 $$a_t$$를 취했을 때, 얼마나 좋은 보상이 기대되는지?
 
 ###### optimal q-value function
 
 q-value 중에서 가장 최적의 q-value 값을 갖는 q-value function을 의미
-&&q^{*}(s,a)=\max_{\pi }Q^{\pi}(s,a)=Q^{\pi^{*}}(s,a)&&
+$$q^{*}(s,a)=\max_{\pi }Q^{\pi}(s,a)=Q^{\pi^{*}}(s,a)$$
